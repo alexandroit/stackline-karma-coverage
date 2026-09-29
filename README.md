@@ -1,25 +1,51 @@
 # @stackline/karma-coverage
 
-Independent maintenance fork of `karma-coverage@2.2.1`. Original API, module format, runtime dependency ranges, and supported Node.js engines are preserved.
+> A Karma plugin. Generate code coverage.
 
-```sh
+[![npm version](https://img.shields.io/npm/v/@stackline/karma-coverage.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/karma-coverage)
+[![license](https://img.shields.io/npm/l/@stackline/karma-coverage.svg?style=flat-square)](https://github.com/alexandroit/stackline-karma-coverage)
+[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-karma-coverage-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-karma-coverage)
+[![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/karma-coverage/)
+[![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
+
+**[Documentation](https://alexandro.net/docs/vanilla/karma-coverage/)** | **[npm](https://www.npmjs.com/package/@stackline/karma-coverage)** | **[Issues](https://github.com/alexandroit/stackline-karma-coverage/issues)** | **[Repository](https://github.com/alexandroit/stackline-karma-coverage)**
+
+**Current package version:** `1.0.1`
+
+---
+
+## Why this package?
+
+`@stackline/karma-coverage` is the Stackline-maintained distribution of `karma-coverage@2.2.1`. It is an independent continuation of [karma-coverage](https://github.com/karma-runner/karma-coverage); original authors and licenses remain credited below.
+
+## Compatibility
+
+| Item | Value |
+| :--- | :--- |
+| Package | `@stackline/karma-coverage@1.0.1` |
+| API target | `karma-coverage@2.2.1` |
+| Supported Node.js | `>=10.0.0` |
+| License | `MIT` |
+| Main entry | `lib/index.js` |
+| Runtime dependencies | `istanbul-lib-coverage, istanbul-lib-instrument, istanbul-lib-report, istanbul-lib-source-maps, istanbul-reports, minimatch` |
+
+## Installation
+
+```bash
 npm install @stackline/karma-coverage
-# Preserve existing imports with an npm alias:
-npm install karma-coverage@npm:@stackline/karma-coverage@1.0.0
 ```
 
-See [UPSTREAM.md](UPSTREAM.md) for the exact source and issue review, and [CHANGELOG.md](CHANGELOG.md) for focused maintenance changes. Development and release tooling runs on Node.js 24; that does not change the library runtime requirement.
+Preserve existing imports and plugin resolution with an npm alias:
 
-Maintained by [Stackline](https://alexandro.net/). [Issues](https://github.com/alexandroit/stackline-karma-coverage/issues) · [npm](https://www.npmjs.com/package/@stackline/karma-coverage).
+```bash
+npm install karma-coverage@npm:@stackline/karma-coverage
+```
 
-## Upstream documentation
+## Usage and API reference
 
-# karma-coverage
+### karma-coverage
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/karma-runner/karma-coverage)
- [![npm version](https://img.shields.io/npm/v/karma-coverage.svg?style=flat-square)](https://www.npmjs.com/package/karma-coverage) [![npm downloads](https://img.shields.io/npm/dm/karma-coverage.svg?style=flat-square)](https://www.npmjs.com/package/karma-coverage)
 
-[![Build Status](https://img.shields.io/travis/karma-runner/karma-coverage/master.svg?style=flat-square)](https://travis-ci.org/karma-runner/karma-coverage) [![Dependency Status](https://img.shields.io/david/karma-runner/karma-coverage.svg?style=flat-square)](https://david-dm.org/karma-runner/karma-coverage) [![devDependency Status](https://img.shields.io/david/dev/karma-runner/karma-coverage.svg?style=flat-square)](https://david-dm.org/karma-runner/karma-coverage#info=devDependencies)
 
 > Generate code coverage using [Istanbul].
 
@@ -136,3 +162,93 @@ For more information on Karma see the [homepage].
 
 [homepage]: https://karma-runner.github.io
 [Istanbul]: https://istanbul.js.org
+
+## Credits and original authors
+
+- Original project: [karma-coverage](https://github.com/karma-runner/karma-coverage).
+- SATO taichi.
+- dignifiedquire.
+- Friedel Ziegelmayer.
+- Aymeric Beaumet.
+- Anton.
+- johnjbarton.
+- dependabot[bot].
+- Jonathan Ginsburg.
+- Mark Ethan Trostler.
+- Tim Kang.
+- hicom150.
+- semantic-release-bot.
+- Anton Shchekota.
+- Maksim Ryzhikov.
+- Nick Malaguti.
+- Mark Trostler.
+- nicojs.
+- Allen Bierbaum.
+- Douglas Duteil.
+- Julen Garcia Leunda.
+- Matt Winchester.
+- Srinivas Dhanwada.
+- Tanguy Krotoff.
+- Wei Kin Huang.
+- Yaroslav Admin.
+- Adam Heath.
+- Andrew Lane.
+- Chris Gladd.
+- Clayton Watts.
+- Dan Watling.
+- Darryl Pogue.
+- Diogo Nicoleti.
+- Dmitry Petrov.
+- Francesco Borzì.
+- Greg Varsanyi.
+- Ian Rufus.
+- James Talmage.
+- Joseph Connolly.
+- Joshua Appelman.
+- Julie.
+- Kyle Welsby.
+- Lloyd Smith II.
+- Maciej Rzepiński.
+- Marceli.no.
+- Matt Lewis.
+- Michael Noack.
+- Michael Stramel.
+- Nick Matantsev.
+- Petar Manev.
+- Robin Böhm.
+- Ron Derksen.
+- Ruben Bridgewater.
+- Sahat Yalkabov.
+- Tanjo, Hiroyuki.
+- Taylor Hakes.
+- Taylor McGann.
+- Tim van der Lippe.
+- Timo Tijhof.
+- Tom Kirkpatrick.
+- Tyler Waters.
+- Vincent Lemeunier.
+- Yusuke Suzuki.
+- abbr.
+- aprooks.
+- carlos.
+- fbergr.
+- piecyk.
+- terussell85.
+- Copyright (C) 2011-2013 Google, Inc.
+- Stackline maintenance: [Alexandro Paixao Marques](https://www.linkedin.com/in/aleinfo/) and [Stackline contributors](https://github.com/alexandroit).
+
+Original copyright, license notices and contributor acknowledgements remain part of this distribution. Stackline maintenance does not replace authorship of the original work.
+
+## License
+
+`MIT`. See the license and notice files in the [repository](https://github.com/alexandroit/stackline-karma-coverage).
+
+## Community and Links
+
+- [Stackline website](https://alexandro.net/)
+- [GitHub projects](https://github.com/alexandroit)
+- [npm packages](https://www.npmjs.com/~alex360qc)
+- [Reddit community — r/Stackline](https://www.reddit.com/r/Stackline/)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+
+Use this repository's issue tracker for reproducible bugs and feature requests. Join r/Stackline for examples, usage questions and release discussions.
