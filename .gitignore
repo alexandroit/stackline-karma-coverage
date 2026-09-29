@@ -1,3 +1,7 @@
 node_modules
 examples/coffee/coverage
 .DS_Store
+node_modules/
+.package-consumer/
+artifact/
+*.tgz

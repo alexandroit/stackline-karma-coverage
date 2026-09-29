@@ -1,3 +1,11 @@
+# Stackline changes
+
+## 1.0.0
+
+- Scoped maintenance fork of karma-coverage@2.2.1 preserving original runtime source, dependency ranges, plugin names and engines.
+- Modernized development test tooling and removed obsolete semantic-release/commit hook dependencies.
+- Added packed-consumer checks, full dependency audit, CI/CodeQL gates, provenance and immutable releases.
+
 ## [2.2.1](https://github.com/karma-runner/karma-coverage/compare/v2.2.0...v2.2.1) (2023-06-23)
 
 

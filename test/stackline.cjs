@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),path=require('node:path'),vm=require('node:vm');
+const root=process.env.STACKLINE_TEST_PACKAGE || path.resolve(__dirname,'..');
+const plugin=require(root);assert(plugin['preprocessor:coverage']);assert(plugin['reporter:coverage']);
+const create=plugin['preprocessor:coverage'][1];
+const logger={create:()=>({debug(){},warn(){},error(){}})};
+const processCoverage=create(logger,path.resolve('.'),['coverage'],{includeAllSources:true});
+const file={originalPath:path.resolve('stackline-coverage-fixture.js'),path:path.resolve('stackline-coverage-fixture.js')};
+let called=false;
+processCoverage('function add(a,b){return a+b;} result=add(20,22);',file,function(code){assert.match(code,/__coverage__/);const context={};vm.runInNewContext(code,context);assert.equal(context.result,42);assert(Object.keys(context.__coverage__).length===1);called=true;});
+process.on('exit',()=>assert(called,'instrumentation callback completed'));
