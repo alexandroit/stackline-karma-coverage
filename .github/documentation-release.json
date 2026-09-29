@@ -1,0 +1,28 @@
+{
+  "repository": "alexandroit/stackline-karma-coverage",
+  "packages": [
+    {
+      "name": "@stackline/karma-coverage",
+      "path": "README.md",
+      "version": "1.0.1",
+      "baselineVersion": "1.0.0",
+      "keywords": [
+        "stackline",
+        "npm-package",
+        "karma-coverage",
+        "karma-plugin",
+        "nodejs",
+        "karma-preprocessor",
+        "karma-reporter",
+        "coverage",
+        "istanbul",
+        "maintenance-fork"
+      ],
+      "homepage": "https://alexandro.net/docs/vanilla/karma-coverage/",
+      "baselineTarball": "https://registry.npmjs.org/@stackline/karma-coverage/-/karma-coverage-1.0.0.tgz",
+      "baselineIntegrity": "sha512-I63h/FE311AK/e5mTc5h0uRqEXV251WRxf3UN6C5v2E5Uc1EHbXEuLpWj0FBWvMxjn4QZFkR+ub//HjX2VHGjg==",
+      "expectedSha512": "0ac66bbabf140c4b1f23da7af178ecb0bda20494ad0c8c1f0934a87b2b4ee137f0fe44f2eafe80b45c158e699c723b135b6ec41918a4585b39bcd9982b892907",
+      "tag": "docs-stackline-karma-coverage-v1.0.1"
+    }
+  ]
+}
