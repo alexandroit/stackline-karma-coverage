@@ -10,7 +10,7 @@
 
 **[Documentation](https://alexandro.net/docs/vanilla/karma-coverage/)** | **[npm](https://www.npmjs.com/package/@stackline/karma-coverage)** | **[Issues](https://github.com/alexandroit/stackline-karma-coverage/issues)** | **[Repository](https://github.com/alexandroit/stackline-karma-coverage)**
 
-**Current package version:** `1.0.2`
+**Current package version:** `1.0.3`
 
 ---
 
@@ -22,7 +22,7 @@
 
 | Item | Value |
 | :--- | :--- |
-| Package | `@stackline/karma-coverage@1.0.2` |
+| Package | `@stackline/karma-coverage@1.0.3` |
 | API target | `karma-coverage@2.2.1` |
 | Supported Node.js | `>=10.0.0` |
 | License | `MIT` |
